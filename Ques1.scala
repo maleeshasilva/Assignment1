@@ -2,20 +2,17 @@ object Ques1{
 
 	def main (args:Array[String])
 	{
-	 takehome(40,20);
+	println("Temperature in Fahrenheit : " + functionToConvert(35));
+
 	}
 
-	def  takehome(hrs:Int,ot:Int):Unit =
+	def  functionToConvert(a:Int):Double=
 	{
-
-	var wage:Int=hrs*150
-	var otpayment:Int =ot*75
-	var income:Int =wage+otpayment
-	var tax:Double =income*0.1
-	var finalpayment :Double =income-tax
-	
-	printf("Take home Salary of an employee is : %.2f",finalpayment)
-
+	var res:Double=0
+	res =a*1.8+32
+	return res
 	}
+
+
 
 }
