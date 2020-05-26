@@ -1,18 +1,23 @@
-object Ques3{
+object Ques2{
 
 	def main(args:Array[String])
 	{	
-	println("Volume is :"+functionToVolume(5));	
+	Profit(15)	
 	}
 
-	def functionToVolume(r:Int):Double= {
+	def Profit(price:Int):Unit= 
+{
 	
-	var volume:Double=0;
+	var attendees:Int=120+(15-price)/5*20
 
-	volume=(4.0/3.0)*math.Pi*r*r*r	
+	var revenue:Int =attendees*price
 
+	var cost:Int =500+attendees
+
+	var fprofit:Int =revenue -cost
+
+	printf("The profit is :%d", fprofit)
 	
-	return volume
 	}
 
 
