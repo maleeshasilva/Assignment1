@@ -2,7 +2,9 @@ object Ques2{
 
 	def main(args:Array[String])
 	{	
-	Profit(15)	
+	Profit(15)
+	Profit(10)
+	Profit(20)
 	}
 
 	def Profit(price:Int):Unit= 
