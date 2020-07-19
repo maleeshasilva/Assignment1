@@ -15,11 +15,11 @@ val cipher=(algo:(Char,Int,String)=>Char,s:String,key:Int,a:String)=>s.map(algo(
 
 val ct=cipher(Encryption,"secret",5,alphabet)
 
-val pt=cipher(Decryption,"secret",5,alphabet)
+val pt=cipher(Decryption,"XJHWJY",5,alphabet)
 
-println("The result of the  Encryption of secret :" +ct)
+println("The result of the  Encryption  :" +ct)
 
-println("The result of  the  Decryption of secret :" +pt)
+println("The result of  the  Decryption  :" +pt)
 
   
 }
